@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+ # You can have the root of your site routed with "root". The syntax of this is controller#method (term?)
+   root 'tweets#index'
+  
   resources :tweets
 
   resources :members
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
